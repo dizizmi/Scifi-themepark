@@ -1,0 +1,55 @@
+/*This stylesheet contains css styling that is only applied in payment_page.html*/
+
+/*form styling*/
+
+.wrapper{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+    
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+    
+.pay1, .pay2{
+    font-size: 25px;
+    padding: 2em;
+        
+}
+    
+label, input, select{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+    
+input, select{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}   
+  
+/*Terms and conditions checkbox styling */
+
+#tconditions{
+    box-shadow: none;
+    position: relative;
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+/*css styling for the submit button that turns green upon mouse hover*/
+
+.pay3{
+    align-items: center;
+}
+.pay3:hover{
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Theme Park for Team 104</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Linking of main stylesheet for consistent styles across all pages linked below using link rel tag-->
+        <link rel="stylesheet" href="stylesheet/main.css" />
+<!-- Linking of page specific stylesheet linked below using link rel tag-->
+        <link rel="stylesheet" href="stylesheet/payment_page.css" />
+    </head>
+    <body>
+        <div class="fp-grid-container">
+            <header>
+  <!-- image of theme park's logo stretches across the top of the webpage -->
+                <img src = "assets/image-index-5.png"
+                     alt="image of theme park" 
+                     width = "300px"
+                     height="300px"
+                     class = "center-img">
+            </header>
+            
+<!-- code below is for the navigation menu, in a unordered list form, style of which is formatted in css -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="other_facilities.html">Other Facilities</a></li>
+                    <li><a class="active" href="payment_page.html">Payment</a></li>
+                    <li>
+                        <img
+                             src="assets/image2.png"
+                             alt="Avatar image"
+                             width="30"
+                             height="auto"/>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<!--Code below is for the form element of the page-->
+        <section id= "container">
+            <div class="wrapper">
+            <div class="form">
+               
+                <div class="pay1">
+                
+                    <h2>Details</h2>
+                   <label for = "first_name">First Name</label>
+                   <input type="text" id="first_name" name="first_name" value="Enter First Name..."><br>
+                   <label for = "last_name">Last Name</label>
+                   <input type="text" id="last_name" name="last_name" value="Enter Last Name...">
+                   <br>
+                   <label for = "email">Email</label>
+                   <input type="text" id="email" name="email" value="xyz@example.com...">
+                   <br>
+                   <br>
+                   <label for="date">Date of Visit</label>
+                   <input type="date" id="date" name="date">
+                   <br>
+                   <br>
+                </div>
+              
+               <div class="pay2">
+                   <h2>Select Tickets</h2>
+                   <label for="tickets">Peak Adult Day Pass (SGD 55)</label>
+                   <select name="tickets" id="tickets">
+                       <option value="0">0</option>
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                   </select>
+                   <br>
+                   <br>
+                   <label for="tickets">Peak Child Pass (SGD 35)</label>
+                   <select name="tickets" id="tickets">
+                       <option value="0">0</option>
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                   </select>
+                   <br>
+                   <br>
+                   <label for="tickets">Peak Senior Pass (SGD 35)</label>
+                   <select name="tickets" id="tickets">
+                       <option value="0">0</option>
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                   </select>
+                   <br>
+                   <input type="checkbox" id="tconditions" name="tconditions" value="accepted">
+                    <label for="tconditions" id="tconditions"> I understand and agree with the Terms & Conditions and Privacy Policy of Sci-Fi Themepark. </label>
+               </div>
+                    <br>
+                    <input type="submit" value="Proceed To Checkout →" class="pay3">
+                </div>
+            </div>
+        </section>
+        <div class="fp-grid-container">
+        <a href id = "#fpbanner">
+ <!-- allows user to go to the top of the page -->
+            <div id = "button">
+                Go to top!
+            </div>
+        </a>
+  
+<!-- footer of website is consistent throughout all pages -->
+            <footer>
+                <p>Contact Us: Email us at scifi@gmail.com (or) call us at +44 64738889</p>
+                <br>
+                <p><em>&#169 Web Devellopment Team 104, 2022</em></p>
+            </footer>
+        </div>
+    </body>
+</html>

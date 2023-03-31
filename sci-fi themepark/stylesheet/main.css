@@ -1,0 +1,270 @@
+/*This stylesheet contains css styling that is in index.html and the common styling shared with other pages*/
+
+
+/* dictates style of the header */
+
+header{
+    background-image: url(../assets/image-index-6.jpeg);
+    grid-area: header;
+    height:200px;
+    text-align: center;     
+    font-family:Helvetica, Arial, sans-serif;
+    font-style:normal;
+    font-variant: normal;
+    font-weight:bold;
+    font-size: 2em;
+    background-size: cover;
+    padding-bottom:50px;
+    color: black;
+}
+
+body{
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, PowderBlue, #d2bfe0);
+}
+
+/* dictates style of navigation menu */
+
+nav{
+    grid-area: nav;
+    background-color: black;
+}
+/* shifts content of nav bar to the right */
+nav ul{
+    list-style: none;
+    text-align: right;
+}
+
+nav li{
+    display:inline;
+    padding:10px;
+}
+
+nav li a{
+    font-style:normal;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*this dictates the colour of the active page in the nav bar*/
+
+.active {
+  color: aqua;
+}
+
+/* dictates style of paragraphs and headings through webpage */
+
+p{
+margin: 20px;
+text-align: justify;
+}
+
+h1{
+    text-align: center;     
+    font-family:Helvetica, Arial, sans-serif;
+    font-style:normal;
+    font-variant: normal;
+    font-weight:bold;
+    font-size: 1.5em;;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    font-family:Helvetica, Arial, sans-serif;
+    font-style:normal;
+    font-variant: normal;
+    font-weight:bold;
+    font-size: 1.5em;;
+    color: black;
+}
+
+h3{
+    font-family:Helvetica, Arial, sans-serif;
+    font-style:normal;
+    font-variant: normal;
+    font-weight:bold;
+    font-size: 1em;;
+    color: black;
+}
+
+/*this centers all images with this class*/
+
+.center-img{
+    border-width: 100px;
+    display: block;
+    margin:auto;
+}
+
+/*this dictates the shake effect that happens when the image is hovered onto*/
+
+.attractions img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*Coupon styling using css from: https://www.w3schools.com/howto/howto_css_coupon.asp*/
+
+.coupon {
+  border: 5px dotted #bbb;
+  width: 100%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 390px;
+  position: relative;
+  background-color: aliceblue;
+}
+
+.coupon_box {
+  padding: 2px 16px;
+  background-color: cadetblue;
+}
+
+.promo_code {
+  background: yellow;
+  padding: 5px;
+}
+
+.coupon_expire {
+  color: red;
+}
+
+#coupon1 {
+    float:left;
+}
+
+#coupon2 {
+    float:right;
+}
+
+#coupon3 {
+    float:inherit;
+}
+
+/* link in nav turns to aquamarine when mouse hovers over it */
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:aquamarine;
+    text-decoration: underline;
+}
+
+/* image of avatar gives the impression that it is clickable*/
+nav img:hover {
+  cursor:pointer  ;
+}
+
+/* image of boy holding map turns from grayscale to color when mouse hovers over it, 
+:hover selector explained in https://www.w3schools.com/cssref/sel_hover.php, 
+filter css property explained in https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
+
+#directions img{
+    filter:grey;
+    -webkit-filter: grayscale(1);
+    margin-bottom: 20px;
+}
+
+#directions img:hover{
+    -webkit-filter:grayscale(0);
+}
+
+
+/* dictates style of footer */
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    line-height: 0.1;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* code determines layout of the "go to top" button */
+
+#button{
+    background-color: black;
+    width: 5%;
+    height: 5%;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    color: azure;
+    text-align: center;
+}
+
+/* code below determines the grid layout of the index page */
+
+#fpbanner{
+    grid-area: fpbanner;
+}
+
+#introduction{
+    grid-area: intro;
+}
+
+#main1{
+    grid-area: one;
+}
+
+#main2{
+    grid-area: two;
+}
+
+#main3{
+    grid-area: three;
+}
+
+#visitorinfo{
+    grid-area: visit;
+}
+
+#directions{
+    grid-area: directions;
+}
+
+#faqs{
+    grid-area:faqs
+}
+
+.fp-grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'fpbanner fpbanner fpbanner'
+    'intro intro intro'
+    'one two three'
+    'visit visit visit'
+    'faqs faqs faqs'
+    'directions directions directions'
+    'footer footer footer';
+}
+
+/*
+References:
+https://www.w3schools.com/howto/howto_css_coupon.asp
+https://www.w3schools.com/cssref/sel_hover.php
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+*/
+
+
+

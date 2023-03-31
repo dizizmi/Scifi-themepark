@@ -1,0 +1,56 @@
+/*This stylesheet contains css styling that is only applied in other_facilities.html*/
+
+#facilities img{
+    border: 10px solid #555;
+}
+
+/*animation of Get your Tickets feature adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3*/
+
+.animation {
+  width: 100px;
+  height: 50px;
+  background-color: salmon;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:salmon; left:0px; top:0px;}
+  25%  {background-color:aqua; left:1310px; top:0px;}
+  50%  {background-color:yellow; left:1310px; top:200px;}
+  75%  {background-color:violet; left:0px; top:200px;}
+  100% {background-color:pink; left:0px; top:0px;}
+}
+
+/*Code to style the "Purchase Tickets" Button at the footer*/
+
+.ctabutton {
+  background-color: rgb(175, 76, 172);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  top: 20%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.ctabutton:hover {
+  background-color: rgb(70, 46, 207); 
+  color: white; 
+  border: none;
+}
+
+/*
+References: 
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3*/
